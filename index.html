@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mastermind v1</title>
+        <link rel="stylesheet" href="css/main.css">
+        
+    </head>
+    <body>
+        <div id="container">
+        <header>
+        <h1>MasterMind </h1>
+        </header>
+        &nbsp;&nbsp;Règles: Trouvez la combinaison de nombres pour gagner 
+        <br>&nbsp;&nbsp;1 signifie que votre chiffre est bon et bien placé
+        <br>&nbsp;&nbsp;. signifie que un chiffre est bon mais mal placé
+        <br> &nbsp;&nbsp;Trouvez la combinaison pour gagner
+
+        <div id="shouts">
+        <section>
+            <div class="form">
+                <input type="number" name="anwser1" class="anwser1" />
+                <input type="number" name="anwser2" class="anwser2" />
+                <input type="number" name="anwser3" class="anwser3" />
+                <input type="number" name="anwser4" class="anwser4" />
+                <input
+                    type="submit"
+                    name="send"
+                    value="Valider"
+                    onclick={valid()}
+                />
+                <input class="reset" type="button" onclick='window.location.reload(false)' value="  Recommencer  "/>
+            </div>
+            <div class="reponses">
+
+            </div>
+        </section>
+    </div>
+</div>
+        <script src="js/main.js"></script>
+        <script src="js/timer.js"></script>
+    </body>
+</html>
